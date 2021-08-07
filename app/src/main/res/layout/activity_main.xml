@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainbg">
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:textSize="20dp"
+        android:rotation="2"
+        android:textColor="#000"
+        android:layout_alignLeft="@id/sign_in_button"
+        android:layout_alignRight="@id/sign_in_button"
+        android:layout_above="@id/sign_in_button"
+        android:layout_centerInParent="true"
+        android:text="Get started. Sign in to continue." />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:rotation="2"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

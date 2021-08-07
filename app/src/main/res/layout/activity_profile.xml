@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profile_3" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:layout_below="@id/imageView"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:rotation="-7"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="88dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email-Id: "
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:rotation="-7"
+        android:layout_marginLeft="69dp"
+        android:layout_marginRight="83dp"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="113dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/bottom_nav"
+        android:layout_marginBottom="145dp"
+        android:rotation="-7"
+        android:text="Sign Out"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        app:srcCompat="@drawable/profile" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_nav"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#fff"
+        android:lines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@color/design_default_color_primary_variant"
+        android:layout_above="@id/bottom_nav"
+        android:text="Made in India\nCopyright © 2020 SDLGroup SVAN."
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
